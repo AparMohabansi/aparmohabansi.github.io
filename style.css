@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Header row flex layout */
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 700px) {
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    nav {
+        justify-content: flex-start;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    color: #222;
+}
+header {
+    background: transparent;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #ffd700;
+}
+.container {
+    max-width: 80vw;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+}
+section {
+    background: #222c;
+    color: #f5f6fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    margin: 3rem 0;
+    padding: 4rem 3rem;
+}
+h2 {
+    color: #ff812e;
+    margin-top: 0;
+}
+ .projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+ .project {
+    margin-bottom: 0;
+}
+footer {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+a{
+    color: #3F5EFB;
+}
+
+
+@media (max-width: 600px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 1rem 0.5rem;
+    }
+}
